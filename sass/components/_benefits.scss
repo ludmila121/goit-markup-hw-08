@@ -1,0 +1,24 @@
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--fifth-color);
+
+    margin-bottom: 30px;
+    &_title {
+     color: var(--primary-text-color);
+     font-weight: 700;
+     line-height: 1.14;
+     list-style: none;
+     font-size: 14px;
+     margin-top: 0;
+     margin-bottom: 10px;
+    }
+    
+    &_text {
+     color: var(--title-text-color);
+     line-height: 1.71;
+    }
+}
