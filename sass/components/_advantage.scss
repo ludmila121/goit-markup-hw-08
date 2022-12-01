@@ -1,5 +1,14 @@
 .advantage {
-    padding: 94px 0;
+    @media screen and (max-width:1199px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+
     &_type {
             display: flex;
             gap: 30px;}
