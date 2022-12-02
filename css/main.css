@@ -66,17 +66,43 @@ button {
   border-radius: 4px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   outline: 2px solid red;
   outline-offset: -2px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 2px solid red;
+    outline-offset: -2px;
+  }
 }
 
 .list {
@@ -260,8 +286,17 @@ button {
           transform: scaleX(1);
 }
 
-.advantage {
-  padding: 94px 0;
+@media screen and (max-width: 1199px) {
+  .advantage {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .advantage_type {
   display: -webkit-box;
