@@ -1,24 +1,34 @@
 .benefits {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    background-color: var(--fifth-color);
+  margin-bottom: 30px;
+  height: 120px;
+  text-align: center;
+  background-color: var(--fifth-color);
 
-    margin-bottom: 30px;
-    &_title {
-     color: var(--primary-text-color);
-     font-weight: 700;
-     line-height: 1.14;
-     list-style: none;
-     font-size: 14px;
-     margin-top: 0;
-     margin-bottom: 10px;
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+
+  &_title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    line-height: 1.14;
+    list-style: none;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: $mobile) {
+      text-align: center;
     }
-    
-    &_text {
-     color: var(--title-text-color);
-     line-height: 1.71;
-    }
+  }
+
+  &_text {
+    color: var(--title-text-color);
+    line-height: 1.71;
+  }
 }

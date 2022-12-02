@@ -67,19 +67,20 @@ button {
 }
 
 @media screen and (max-width: 1199px) {
-  .section {
+  .section, .advantage {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section {
+  .section, .advantage {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   outline: 2px solid red;
@@ -98,10 +99,6 @@ button {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    outline: 2px solid red;
-    outline-offset: -2px;
   }
 }
 
@@ -286,39 +283,59 @@ button {
           transform: scaleX(1);
 }
 
-@media screen and (max-width: 1199px) {
-  .advantage {
-    padding-top: 60px;
-    padding-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .advantage_type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
-  .advantage {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .advantage_type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
   }
 }
-.advantage_type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+.advantage_properties {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .advantage_properties {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage_properties {
+    margin: 30px auto;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage_properties {
+    width: 270px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 270px;
-  height: 120px;
-  background-color: var(--fifth-color);
   margin-bottom: 30px;
+  height: 120px;
+  text-align: center;
+  background-color: var(--fifth-color);
+}
+@media screen and (min-width: 480px) {
+  .benefits {
+    text-align: center;
+  }
 }
 .benefits_title {
   color: var(--primary-text-color);
@@ -328,6 +345,12 @@ button {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .benefits_title {
+    text-align: center;
+  }
 }
 .benefits_text {
   color: var(--title-text-color);
