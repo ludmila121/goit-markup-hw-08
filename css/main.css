@@ -310,6 +310,9 @@ button {
 }
 @media screen and (min-width: 768px) {
   .advantage_properties {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 30px auto;
     width: 354px;
   }
@@ -317,6 +320,9 @@ button {
 @media screen and (min-width: 1200px) {
   .advantage_properties {
     width: 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -335,6 +341,16 @@ button {
 @media screen and (min-width: 480px) {
   .benefits {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .benefits_title {
