@@ -310,9 +310,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .advantage_properties {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: 30px auto;
     width: 354px;
   }
@@ -320,9 +317,6 @@ button {
 @media screen and (min-width: 1200px) {
   .advantage_properties {
     width: 270px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -335,16 +329,35 @@ button {
 .benefits {
   margin-bottom: 30px;
   height: 120px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: var(--fifth-color);
 }
 @media screen and (min-width: 480px) {
   .benefits {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
   .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -366,6 +379,11 @@ button {
 @media screen and (min-width: 480px) {
   .benefits_title {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits_title {
+    text-align: start;
   }
 }
 .benefits_text {

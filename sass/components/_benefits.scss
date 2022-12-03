@@ -1,13 +1,20 @@
 .benefits {
   margin-bottom: 30px;
   height: 120px;
-  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: var(--fifth-color);
 
   @media screen and (min-width: $mobile) {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   @media screen and (min-width: $tablet) {
+    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -26,6 +33,9 @@
 
     @media screen and (min-width: $mobile) {
       text-align: center;
+    }
+    @media screen and (min-width: $tablet) {
+      text-align: start;
     }
   }
 
