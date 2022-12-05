@@ -1,49 +1,72 @@
 .team {
-    background-color: var(--fifth-color);
-    padding: 94px 0;
-    
-    &_title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        padding-right: 15px;
-        text-align: center;
-        margin-bottom: 50px;
+  background-color: var(--fifth-color);
+  padding: 94px 0;
+
+  &_title {
+    font-weight: 700;
+    text-align: center;
+    @media screen and (min-width: $mobile) {
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 30px;
     }
-    
-    &_card {
-        display: flex;
-        gap: 30px;
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+      line-height: 1.16;
+      padding-right: 15px;
+      margin-bottom: 50px;
     }
-    
-    &_list {
-        background-color: var(--primary-white-color);
-        width: 270px;
-        outline: 1px solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-    
+  }
+
+  &_card {
+    @media screen and (min-width: $mobile) {
+      display: block;
     }
-    
-    &_forename {
-        padding: 30px 0;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
     }
-    
-    &_name {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      gap: 30px;
     }
-    
-    &_job {
-        color: var(--title-text-color);
-        font-size: 16px;
-        line-height: 1.18;
-        display: block;
-        text-align: center;
-        margin-bottom: 16px;
+  }
+
+  &_list {
+    background-color: var(--primary-white-color);
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 30px;
     }
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
+  }
+
+  &_forename {
+    padding: 30px 0;
+  }
+
+  &_name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &_job {
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }

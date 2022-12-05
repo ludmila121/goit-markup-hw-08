@@ -12,7 +12,16 @@
   background-color: var(--secundary-color);
   padding: 200px 0;
   background-repeat: no-repeat;
-
+  &_container {
+    @media screen and (min-width: $tablet) {
+      padding-left: 204px;
+      padding-right: 204px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-left: 252px;
+      padding-right: 252px;
+    }
+  }
   &_title {
     color: var(--primary-white-color);
     font-weight: 900;
@@ -22,15 +31,12 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
-  }
-  @media screen and (min-width: $tablet) {
-    margin: 0 204px;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 44px;
-    line-height: 1.36;
-    margin-right: auto;
-    margin-left: auto;
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &_button {
