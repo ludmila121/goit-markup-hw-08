@@ -89,7 +89,7 @@
   }
 
   &_form {
-    @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 1190px) {
       text-align: center;
     }
     @media screen and (min-width: $desktop) {
@@ -121,8 +121,12 @@
     @media screen and (max-width: 1190px) {
       margin-bottom: 20px;
     }
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
     @media screen and (min-width: $desktop) {
       padding-left: 16px;
+      width: 358px;
     }
   }
 }
