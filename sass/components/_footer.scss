@@ -9,7 +9,8 @@
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
+      align-items: baseline;
     }
     @media screen and (min-width: $desktop) {
       display: flex;
@@ -38,6 +39,9 @@
       text-align: center;
       margin-bottom: 60px;
     }
+    @media screen and (min-width: $tablet) {
+      margin-left: 165px;
+    }
     @media screen and (min-width: $desktop) {
       margin-left: 70px;
     }
@@ -49,6 +53,9 @@
     color: var(--primary-white-color);
     margin-bottom: 20px;
     text-transform: uppercase;
+    @media screen and (max-width: 1190px) {
+      text-align: center;
+    }
   }
 
   &_list {
@@ -159,7 +166,6 @@
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   display: flex;
-  justify-content: center;
   margin: 0 auto;
   align-items: center;
   font-weight: 700;
@@ -181,5 +187,5 @@
 .form_pic {
   position: absolute;
   top: 25%;
-  right: 13px;
+  right: 25px;
 }

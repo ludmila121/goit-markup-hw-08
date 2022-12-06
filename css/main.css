@@ -744,8 +744,12 @@ button {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -785,6 +789,11 @@ button {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer_networks {
+    margin-left: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer_networks {
     margin-left: 70px;
@@ -796,6 +805,11 @@ button {
   color: var(--primary-white-color);
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1190px) {
+  .footer_title {
+    text-align: center;
+  }
 }
 .footer_list {
   display: -webkit-box;
@@ -921,9 +935,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -945,7 +956,7 @@ button {
 .form_pic {
   position: absolute;
   top: 25%;
-  right: 13px;
+  right: 25px;
 }
 
 .backdrop {
