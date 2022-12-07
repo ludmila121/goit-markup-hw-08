@@ -11,6 +11,7 @@
     url("../img/employment.jpg");
   background-color: var(--secundary-color);
   padding: 200px 0;
+
   background-repeat: no-repeat;
   &_container {
     @media screen and (min-width: $tablet) {
