@@ -879,6 +879,7 @@ button {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--primary-white-color);
+  padding-left: 16px;
 }
 @media screen and (max-width: 1190px) {
   .footer_subscription {
@@ -1452,7 +1453,6 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: auto;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -1480,7 +1480,7 @@ button {
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-bottom: auto;
   list-style: none;
 }
 
@@ -1504,12 +1504,47 @@ button {
 
 .mobile_contact {
   list-style: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02;
+  padding: 0;
 }
 
-.mobile_link {
+.mobile_link:not(:last-child) {
+  margin-bottom: 32px;
+  list-style: none;
+}
+
+.mobile_link-tel {
+  color: var(--accent-color);
   text-decoration: none;
+}
+
+.mobile_link-mal {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.social_mobile-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  text-decoration: none;
+  gap: 20px;
+  padding: 0;
 }
 
 .mobile_social {
   text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
