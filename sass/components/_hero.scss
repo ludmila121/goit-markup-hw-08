@@ -5,7 +5,8 @@
   background-color: var(--secundary-color);
   padding: 200px 0;
   background-repeat: no-repeat;
-
+  max-width: 450px;
+  height: 400px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -15,27 +16,48 @@
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx)
-  {background-image: url("/img/hero/header-sm@2x.jpg") 
+  {background-image:linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+     url("/img/hero/header-sm@2x.jpg") 
    }  
    
   @media screen  and (min-width: 481px) {
-  background-image: url("/img/hero/header-md@1x.jpg");
-
+  background-image:linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+   url("/img/hero/header-md@1x.jpg");
+   max-width: 768px;
+   height: 400px;
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx)
-  {background-image: url("/img/hero/header-md@2x.jpg") 
+  {background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/img/hero/header-md@2x.jpg") 
    }  
   }
   @media screen and (min-width:769px) {
    max-width: 1600px;
    height: 600px;
-   background-image: url("/img/hero/header-lg@1x.jpg");
+   background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+   url("/img/hero/header-lg@1x.jpg");
 
    @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx)
-  {background-image: url("/img/hero/header-lg@2x.jpg") 
+  {background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/img/hero/header-lg@2x.jpg") 
    }
  }
  
