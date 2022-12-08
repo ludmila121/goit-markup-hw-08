@@ -1,26 +1,46 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
+  background-color: var(--secundary-color);
+  padding: 200px 0;
+  background-repeat: no-repeat;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../img/employment.jpg");
-  background-color: var(--secundary-color);
-  padding: 200px 0;
-  background-repeat: no-repeat;
-  
+    url("/img/hero/header-sm@1x.jpg");
+
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx)
-  (background-image: url(/img/svg/hero/header/imglg@2x.jpg);)
+  {background-image: url("/img/hero/header-sm@2x.jpg") 
+   }  
+   
+  @media screen  and (min-width: 481px) {
+  background-image: url("/img/hero/header-md@1x.jpg");
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx)
+  {background-image: url("/img/hero/header-md@2x.jpg") 
+   }  
   }
+  @media screen and (min-width:769px) {
+   max-width: 1600px;
+   height: 600px;
+   background-image: url("/img/hero/header-lg@1x.jpg");
 
+   @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx)
+  {background-image: url("/img/hero/header-lg@2x.jpg") 
+   }
+ }
+ 
 
-  &_container {
+&_container {
     @media screen and (min-width: $tablet) {
       padding-left: 204px;
       padding-right: 204px;
@@ -30,7 +50,8 @@
       padding-right: 252px;
     }
   }
-  &_title {
+
+&_title {
     color: var(--primary-white-color);
     font-weight: 900;
     letter-spacing: 0.06em;
@@ -47,7 +68,7 @@
     }
   }
 
-  &_button {
+&_button {
     position: relative;
 
     background-color: var(--accent-color);
@@ -72,4 +93,5 @@
       color: rgba(0, 0, 0, 0.15);
     }
   }
-}
+
+}  
