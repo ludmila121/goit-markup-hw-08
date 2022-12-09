@@ -3,7 +3,7 @@
   margin-right: auto;
   background-size: cover;
   background-color: var(--secundary-color);
-  padding: 200px 0;
+  padding: 118px 0;
   background-repeat: no-repeat;
   max-width: 450px;
   height: 400px;
@@ -44,6 +44,7 @@
   @media screen and (min-width:769px) {
    max-width: 1600px;
    height: 600px;
+   padding: 200px 0;
    background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
