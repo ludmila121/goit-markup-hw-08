@@ -81,42 +81,44 @@
   padding: 0;
   margin-bottom: auto;
   list-style: none;
+  font-weight: 500px;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02;
 }
+
 
 .mobile_item .link {
   display: block;
   padding: 10px;
   color: var(--primary-text-color);
   text-decoration: none;
-
-  font-weight: 500px;
-  font-size: 40px;
-  line-height: 1.17;
-}
+ }
+  
 .mobile_item .link-current {
-  font-weight: 500px;
-  font-size: 40px;
-  line-height: 1.17;
   color: var(--accent-color);
   text-decoration: none;
 }
 .mobile_contact {
   list-style: none;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
   letter-spacing: 0.02;
   padding: 0;
+  margin-bottom: 64px;
 }
 .mobile_link:not(:last-child) {
   margin-bottom: 32px;
   list-style: none;
 }
 .mobile_link-tel {
+  font-size: 34px;
+  line-height: 1.17;
   color: var(--accent-color);
   text-decoration: none;
 }
 .mobile_link-mal {
+  font-size: 24px;
+  line-height: 1.16;
   color: var(--title-text-color);
   text-decoration: none;
 }
