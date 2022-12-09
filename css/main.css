@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
@@ -1589,7 +1590,7 @@ button {
 }
 
 .mobile_social::after {
-  content: "";
+  content: ʼʼ;
   border-right: 1px solid #ECECEC;
   padding-right: 10px;
   -webkit-transform: rotate(90deg);
