@@ -137,7 +137,9 @@
   text-decoration: none;
   color: var(--accent-color);
 }
-.mobile_social{
+.mobile_social::after{
+  content: "";
  border-right: 1px solid #ECECEC;
  padding-right: 10px;
+ transform: rotate(90deg);
  }
