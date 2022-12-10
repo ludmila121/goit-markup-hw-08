@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
@@ -1586,10 +1585,7 @@ button {
   color: var(--accent-color);
 }
 
-.mobile_social::after {
-  content: ʼʼ;
-  border-right: 1px solid #ECECEC;
+.mobile_social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
