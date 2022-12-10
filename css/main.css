@@ -636,7 +636,7 @@ a {
   }
 }
 @media screen and (max-width: 767px) {
-  .team_list_list:not(:last-child) {
+  .team_list:not(:last-child) {
     margin-bottom: 30px;
   }
 }

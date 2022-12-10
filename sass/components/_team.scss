@@ -50,12 +50,12 @@
     @media screen and (min-width: $desktop) {
       width: 270px;
     }
+  }
   &_list:not(:last-child){
       @media screen and (max-width:767px) {
       margin-bottom: 30px;
     }
     }
-  }
   &_img{
 margin-left: auto;
 margin-right: auto;
