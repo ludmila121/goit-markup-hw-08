@@ -41,6 +41,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ::before,
@@ -64,6 +65,12 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 @media screen and (max-width: 1199px) {
@@ -418,9 +425,6 @@ button {
     gap: 30px;
   }
 }
-.advantage_properties {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 480px) {
   .advantage_properties {
     width: 450px;
@@ -442,6 +446,9 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+.advantage_properties:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .benefits {
@@ -559,7 +566,16 @@ button {
 
 .team {
   background-color: var(--fifth-color);
-  padding: 94px 0;
+}
+@media screen and (max-width: 1199px) {
+  .team {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 .team_title {
   font-weight: 700;
@@ -1008,13 +1024,13 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop--is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.backdrop--is-hidden .modal {
+.backdrop .is-hidden .modal {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1571,8 +1587,14 @@ button {
           align-items: center;
   list-style: none;
   text-decoration: none;
-  gap: 20px;
   padding: 0;
+}
+@media screen and (max-width: 400px) {
+  .social_mobile-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 10px;
+  }
 }
 
 .mobile_social {
@@ -1588,4 +1610,5 @@ button {
 .mobile_social-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -14,11 +14,10 @@
     }
   }
   &_properties {
-    margin-bottom: 30px;
+    
     @media screen and (min-width: $mobile) {
       width: 450px;
     }
-
     @media screen and (min-width: $tablet) {
       margin: 30px auto;
       width: 354px;
@@ -28,5 +27,8 @@
       align-items: center;
       justify-content: center;
     }
+  }
+  &_properties:not(:last-child){
+    margin-bottom: 30px;
   }
 }
