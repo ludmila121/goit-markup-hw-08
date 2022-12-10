@@ -433,7 +433,6 @@ a {
 }
 @media screen and (min-width: 768px) {
   .advantage_properties {
-    margin: 30px auto;
     width: 354px;
   }
 }
@@ -448,8 +447,10 @@ a {
             justify-content: center;
   }
 }
-.advantage_properties:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 768px) {
+  .advantage_properties:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .benefits {
