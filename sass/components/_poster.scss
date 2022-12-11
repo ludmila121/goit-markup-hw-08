@@ -3,17 +3,29 @@
    
     &_table{ 
        display: flex;
+       flex-direction: column;
        flex-wrap: wrap;
        gap: 30px;
+       
     }
     
     &_btn-list {
+      @media screen and (max-width:767px) {
        display: flex;
-       justify-content: center;
-       margin-bottom: 50px;
-       margin-top: 0;
-       gap: 8px;
-    }
+       flex-wrap: wrap;
+      }
+      @media screen and (min-width:$tablet) {
+         display: flex;
+         justify-content: center;
+         margin-bottom: 30px;
+         margin-top: 0;
+      }
+      @media screen and (min-width:$desktop) {
+         margin-bottom: 50px;
+         gap: 8px;
+      }
+         
+      }
     &_knob {
        background-color: var(--fifth-color);
        color: var(--primary-text-color);
@@ -23,11 +35,18 @@
        font-size: 16px;
        line-height: 1.62;
        padding: 6px 22px;
+
        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media  screen and (min-width:$tablet) {
+         
+      }
     }
     
     &_knob:not(:last-child) {
-       margin-right: 8px;
+      @media screen and (min-width:$desktop) {
+         margin-right: 8px;
+         
+      }
     }
     
     
@@ -39,11 +58,17 @@
     }
     &_card {
        position: relative;
+       margin-bottom: 30px;;
     }
     &_link {
        display: block;
-       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
-    }
+       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width:768px) {
+      display:flex;
+      flex-direction: column;
+      height: 100%;
+       } 
+      }
     
     &_link:hover,
     &_link:focus {
@@ -87,7 +112,10 @@
         border-right: 1px solid rgba(238, 238, 238, 1);
         border-left: 1px solid rgba(238, 238, 238, 1);
         border-bottom: 1px solid rgba(238, 238, 238, 1);
-    }
+        @media screen and (min-width:768px) {
+         flex-grow:1;
+        }
+      }
     
     &_heading {
        color: var(--primary-text-color);
